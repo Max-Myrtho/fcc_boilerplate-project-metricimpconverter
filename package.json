@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
-    "test": "mocha ./tests/ --ui tdd"
+    "test": "mocha ./tests/ --ui tdd",
+    "dist0": "rm -rf dist",
+    "modules0": "rm -rf node_modules",
+    "packagelock0": "rm -rf package-lock.json",
+    "reset": "npm run dist0 && npm run modules0 && npm run packagelock0"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
